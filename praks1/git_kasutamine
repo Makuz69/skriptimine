@@ -23,7 +23,7 @@ Remote seadistamine:
 a) git remote add nimi github:address
 git remote add skriptimine git@github.com:Makuz69/skriptimine.git
 
-n) git remote kontroll
+b) git remote kontroll
 git remote -v
 
 Põhikasutamine:
