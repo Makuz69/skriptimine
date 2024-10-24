@@ -1,5 +1,6 @@
 * root kasutajana:
 installi - apt install git
+
 * tavakasutajana:
 esmakordselt:
 
@@ -17,23 +18,40 @@ cd skriptimine
 d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas
 git init
 
-remote seadistamine:
+Remote seadistamine:
 
-e) git remote add nimi github:address
+a) git remote add nimi github:address
 git remote add skriptimine git@github.com:Makuz69/skriptimine.git
 
-f) git remote kontroll
+n) git remote kontroll
 git remote -v
 
-Lisa oma fail jälgimisele:
+Põhikasutamine:
 
-g) git add failinimi
+a) git add failinimi
 git add git_kasutamine
 
-h) git commit-m "Kirjelduse lühilause"
+b) git commit-m "Kirjelduse lühilause"
 git commit -m "See on esimene kommentaar"
 
-git push:
-
-i) git push -uf kaustanimi master
+c) git push -uf kaustanimi master
 git push -uf skriptimine master
+
+Kui midagi katki siis:
+
+a) tõsta vajalikud failid välja, nt ülem kataloogi
+mv Failinimi asukoht
+mv git_kasutamine ..
+
+b) kustuta vigane repositoorium
+rm -rf Kausta nimi/
+rm -rf skriptimine/ 
+
+c) klooni viimane korralik seisund githubist
+git clone github.com/aadress.git
+git clone https://github.com/Makuz69/skriptimine.git
+
+d) Tõsta failid tagasi
+mv Failinimi asukoht
+
+git status
