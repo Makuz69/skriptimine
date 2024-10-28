@@ -2,15 +2,19 @@
 
 # Arvutamine
 
-
+echo ""
 
 echo -n "Sisestage ainepunktide arv: "
 read x
 
 echo -n "Sisestage nädalate arv: "
 read y
+echo ""
 
-sum="`echo "($x*26)/$y" | bc`"
+vastus=`echo "scale=1;$x*26/$y" | bc`
+vastusum="`echo "($vastus+0.9)/1" | bc`"
+
 echo -n "Nädala eeldatav ajakulu: "
-vastus="`echo "($sum+0.9)/1" | bc`"
-echo = "$vastus"
+echo -n $vastusum
+echo " tundi"
+echo ""
