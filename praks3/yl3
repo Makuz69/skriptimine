@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Arvutamine
+
+
+
+echo -n "Sisestage ainepunktide arv: "
+read x
+
+echo -n "Sisestage nädalate arv: "
+read y
+
+sum="`echo "($x*26)/$y" | bc`"
+echo -n "Nädala eeldatav ajakulu: "
+vastus="`echo "($sum+0.9)/1" | bc`"
+echo = "$vastus"
