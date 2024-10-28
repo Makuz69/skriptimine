@@ -2,9 +2,10 @@
 
 # Testime kuupäeva
 
+echo ""
 date +"Täna on %A, %B %d, %Y"
 sleep 1
-echo ""
+
 date +"Kell on %H:%M"
 sleep 1
 echo ""
