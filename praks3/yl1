@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# See skript on loodud tervituseks
+echo ""
+echo -n "Sisesta oma ees- ja perenimi: "
+read eesnimi perenimi
+sleep 1
+echo ""
+echo -n "Tere tulemast, "
+echo -n "$eesnimi $perenimi"
+echo "!"
