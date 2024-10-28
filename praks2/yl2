@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Testime kuupäeva
+
+date +"Täna on %A, %B %d, %Y"
+sleep 1
+date +"Kell on %H:%M"
+sleep 1
+cal | tail -n 7
+
