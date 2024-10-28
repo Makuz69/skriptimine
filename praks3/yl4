@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Bussiekskursioonide jaoks vaja minev skript
+
+echo ""
+
+# Küsi grupi suurust ja bussis olevate kohtade arvu
+echo -n "Sisesta reisijate arv grupis: "
+read reisijate_arv
+echo -n "Sisesta bussis olevate kohtade arv: "
+read kohtade_arv_bussis
+echo ""
+sleep 1
+
+# Arvutame, mitu bussi on täielikult täidetud ja kui palju inimesi jääb maha
+busside_arv=$((reisijate_arv / kohtade_arv_bussis)) 
+maha_jaanud=$((reisijate_arv % kohtade_arv_bussis))
+
+
+# Väljastame tulemused
+echo -n "Täielikult täidetud busside arv: "
+echo $busside_arv
+echo -n "Inimesed, kes jäävad maha: "
+echo $maha_jaanud
+
+echo""
