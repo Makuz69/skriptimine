@@ -4,7 +4,11 @@
 
 date +"Täna on %A, %B %d, %Y"
 sleep 1
+echo ""
 date +"Kell on %H:%M"
 sleep 1
+echo ""
+date +"%B %Y kalender"
+
 cal | tail -n 7
 
