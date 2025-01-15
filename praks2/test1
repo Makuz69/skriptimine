@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Skript Tere, kasutajanimi
+
+echo -n "Tere, " ;
+echo -n `whoami`
+echo  "!"
+
+
+sleep 1
