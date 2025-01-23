@@ -31,10 +31,17 @@ if [ $MYSQL -eq 0 ]; then
 
 elif [ $MYSQL -eq 1 ]; then
 
-	echo "MYSQL on juba paigaldatud"
-	
-	systemctl status mysql
+	echo "MYSQL on juba paigaldatud!"
 
 # lõpetame tingimuse
 
+fi
+
+# Vaatame, kas PHP töötab
+if systemctl is-active --quiet mysql; then
+    echo "MYSQL töötab!"
+else
+    echo "MYSQL ei tööta!"
+
+#lõpetame uuesti tingimuse
 fi
