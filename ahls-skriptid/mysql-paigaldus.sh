@@ -37,7 +37,7 @@ elif [ $MYSQL -eq 1 ]; then
 
 fi
 
-# Vaatame, kas PHP töötab
+# Vaatame, kas MYSQL töötab
 if systemctl is-active --quiet mysql; then
     echo "MYSQL töötab!"
 else
