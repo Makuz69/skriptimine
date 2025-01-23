@@ -32,7 +32,7 @@ if [ $MYSQL -eq 0 ]; then
 elif [ $MYSQL -eq 1 ]; then
 
 	echo "MYSQL on juba paigaldatud!"
-
+	sleep 1
 # lõpetame tingimuse
 
 fi
@@ -45,3 +45,12 @@ else
 
 #lõpetame uuesti tingimuse
 fi
+
+	sleep 1
+
+# Avame mysqli
+
+	echo "Avame mysqli"
+	sleep 1
+	
+	mysql
